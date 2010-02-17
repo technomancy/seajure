@@ -2,4 +2,5 @@
   :projects [:leiningen :clojure-mode :swank-clojure
              :clojure-gem :clojure-http-client :mire]}
  {:name "Brendan Ribera" :url "http://threebrothers.org/brendan/"
-  :projects [:clj-kdtree]}]
+  :projects [:clj-kdtree]}
+ {:name "Eric Hanchrow"}]
