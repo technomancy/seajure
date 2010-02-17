@@ -1,5 +1,5 @@
 (ns seajure
-  (:use [net.cgrand.enlive-html :only [deftemplate content set-attr do-> at]]
+  (:use [net.cgrand.enlive-html :only [deftemplate content set-attr do-> clone-for]]
         [clj.io :only [spit copy file]]))
 
 (def assets ["style.css" "logo.png"])
@@ -13,30 +13,23 @@
       (java.io.PushbackReader.)
       (read)))
 
-;; TODO: I'm just happy to get this to output correctly; I'm sure it's
-;; very unidiomatic Enlive usage. Fix it once Enlive gets docs. =\
+;; Enlive hasn't more docs yet :-( but here I fixed it:
 (defn member-project-links [projects]
-  (fn [matched]
-    (for [p projects]
-      (at matched [:a] (do-> (content (name p))
-                             (set-attr :href (str "#" p)))))))
+  (clone-for [p projects]
+    [:a] (do-> (content (name p)) (set-attr :href (str "#" p)))))
 
 (defn member-links [members]
-  (fn [matched]
-    (for [{:keys [name url projects]} members]
-      (at matched
-          [:li :a] (do-> (content name)
-                         (set-attr :href url))
-          [:li :span] (member-project-links projects)))))
+  (clone-for [{:keys [name url projects]} members]
+    [:li :a] (do-> (content name)
+               (set-attr :href url))
+    [:li :span] (member-project-links projects)))
 
 (defn project-links [projects]
-  (fn [matched]
-    (for [[anchor {:keys [name url description]}] projects]
-      (at matched
-          [:dt :a] (do-> (content name)
-                         (set-attr :name anchor)
-                         (set-attr :href url))
-          [:dd] (content description)))))
+  (clone-for [[anchor {:keys [name url description]}] projects]
+    [:dt :a] (do-> (content name)
+               (set-attr :name anchor)
+               (set-attr :href url))
+    [:dd] (content description)))
 
 (deftemplate index "index.html" [members projects]
   [:ul.members] (member-links members)
