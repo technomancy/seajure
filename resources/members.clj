@@ -3,4 +3,6 @@
              :clojure-gem :clojure-http-client :mire]}
  {:name "Brendan Ribera" :url "http://threebrothers.org/brendan/"
   :projects [:clj-kdtree]}
- {:name "Eric Hanchrow"}]
+ {:name "Eric Hanchrow"}
+ {:name "Kevin Downey"
+  :projects [:clojurebot :Repl :clojure-dependency-grapher]}]
