@@ -23,4 +23,14 @@
         :description "A multiplayer text adventure and learning project."}
  :clj-kdtree {:name "clj-kdtree"
               :url "http://github.com/abscondment/clj-kdtree"
-              :description "kd-trees in Clojure."}}
+              :description "kd-trees in Clojure."}
+ :clojurebot {:name "clojurebot"
+	      :url "http://github.com/hiredman/clojurebot"
+	      :description "irc bot for #clojure"}
+ :Repl {:name "Repl"
+	:url "http://github.com/hiredman/Repl"
+	:description "Gui repl"}
+ :clojure-dependency-grapher
+ {:name "clojure-dependency-grapher"
+  :url "http://github.com/hiredman/clojure-dependency-grapher"
+  :description "generate dot (graphviz) files describing dependencies"}}
