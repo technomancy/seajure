@@ -17,20 +17,33 @@
  :clojure-http-client {:name "Clojure HTTP Client"
                        :url "http://github.com/technomancy/clojure-http-client"
                        :description "What it says on the box."}
-
  :mire {:name "Mire"
         :url "http://github.com/technomancy/mire"
         :description "A multiplayer text adventure and learning project."}
+
  :clj-kdtree {:name "clj-kdtree"
               :url "http://github.com/abscondment/clj-kdtree"
               :description "kd-trees in Clojure."}
+
  :clojurebot {:name "clojurebot"
-	      :url "http://github.com/hiredman/clojurebot"
-	      :description "irc bot for #clojure"}
+              :url "http://github.com/hiredman/clojurebot"
+              :description "irc bot for #clojure"}
+
  :Repl {:name "Repl"
-	:url "http://github.com/hiredman/Repl"
-	:description "Gui repl"}
+        :url "http://github.com/hiredman/Repl"
+        :description "Gui repl"}
+
  :clojure-dependency-grapher
  {:name "clojure-dependency-grapher"
   :url "http://github.com/hiredman/clojure-dependency-grapher"
-  :description "generate dot (graphviz) files describing dependencies"}}
+  :description "generate dot (graphviz) files describing dependencies"}
+
+ :serializable-fn
+ {:name "Serializable Fn"
+  :url "http://github.com/technomancy/serializable-fn"
+  :description "Make your functions print prettily!"}
+
+ :robert-hooke
+ {:name "Robert Hooke"
+  :url "http://github.com/technomancy/robert-hooke"
+  :description "A generalized function extensibility mechanism for plugins."}}
