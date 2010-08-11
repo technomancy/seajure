@@ -46,4 +46,24 @@
  :robert-hooke
  {:name "Robert Hooke"
   :url "http://github.com/technomancy/robert-hooke"
-  :description "A generalized function extensibility mechanism for plugins."}}
+  :description "A generalized function extensibility mechanism for plugins."}
+
+ :amontillado
+ {:name "Amontillado"
+  :url "http://github.com/hiredman/Amontillado"
+  :description "bitcask inspired storage for clojure"}
+
+ :cellar
+ {:name "cellar"
+  :url "http://github.com/hiredman/cellar"
+  :description "an abstraction over key value stores"}
+
+ :Arkham
+ {:name "Arkham"
+  :url "http://github.com/hiredman/Arkham"
+  :description "a lisp interpreter"}
+
+ :graft
+ {:name "graft"
+  :url "http://github.com/hiredman/graft"
+  :description "translate uris to functions for ring"}}

@@ -7,4 +7,5 @@
  {:name "Eric Hanchrow"}
  {:name "Kevin Downey"
   :projects [:clojurebot :Repl :clojure-dependency-grapher
-             :serializable-fn]}]
+             :serializable-fn :amontillado :graft :cellar
+             :Arkham]}]
