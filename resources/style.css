@@ -21,6 +21,10 @@ h1 a {
     text-decoration: none;
 }
 
+p.intro {
+    margin: 1em 3em;
+}
+
 a { 
     text-decoration: none;
     color: #2f4887;
