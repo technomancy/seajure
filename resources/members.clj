@@ -1,11 +1,4 @@
-[{:name "Phil Hagelberg" :url "http://technomancy.us"
-  :projects [:leiningen :clojure-mode :swank-clojure
-             :clojure-gem :clojure-http-client :mire
-             :serializable-fn :robert-hooke]}
- {:name "Brendan Ribera" :url "http://threebrothers.org/brendan/"
-  :projects [:clj-kdtree]}
+[{:name "Phil Hagelberg" :url "http://technomancy.us"}
+ {:name "Brendan Ribera" :url "http://threebrothers.org/brendan/"}
  {:name "Eric Hanchrow"}
- {:name "Kevin Downey"
-  :projects [:clojurebot :Repl :clojure-dependency-grapher
-             :serializable-fn :amontillado :graft :cellar
-             :Arkham]}]
+ {:name "Kevin Downey"}]
