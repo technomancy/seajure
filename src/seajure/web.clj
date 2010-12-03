@@ -1,7 +1,7 @@
-(ns seajure
+(ns seajure.web
   (:use [net.cgrand.enlive-html :only [deftemplate content set-attr do->
                                        clone-for]]
-        [clj.io :only [spit copy file]]))
+        [clojure.java.io :only [copy file]]))
 
 (def assets ["style.css" "logo.png"])
 
