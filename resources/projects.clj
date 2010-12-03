@@ -66,4 +66,23 @@
  :graft
  {:name "graft"
   :url "http://github.com/hiredman/graft"
-  :description "translate uris to functions for ring"}}
+  :description "translate uris to functions for ring"}
+
+ :chinese-democracy
+ {:name "Chinese Democracy"
+  :url "http://github.com/hiredman/chinese-democracy"
+  :description "Master^H^H^H^H^H^HChairman Election"}
+
+ :cabeza-de-vaca
+ {:name "Cabeza de Vaca"
+  :url "http://github.com/Seajure/cabeza-de-vaca"
+  :description "Embark on a voyage of discovery… Local network discovery."}
+ :radagast
+ {:name "Radagast"
+  :url "http://github.com/Seajure/radagast"
+  :description "Simplistic test coverage"}
+
+ :reducate
+ {:name "Reducate"
+  :url "http://github.com/Seajure/reducate"
+  :description "A reduce-like macro."}}
